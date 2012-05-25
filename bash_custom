@@ -34,4 +34,4 @@ do
 done
     
 # Open mvim files in new tab
-alias v = 'mvim'
+alias v=mvim
