@@ -24,7 +24,8 @@ highlight Normal ctermbg=none
 
 "Set linenumber stuff
 set numberwidth=3
-set relativenumber
+"set relativenumber
+set number
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 highlight LineNr ctermbg=darkgrey

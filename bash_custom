@@ -33,3 +33,5 @@ do
     source $script
 done
     
+# Open mvim files in new tab
+alias v = 'mvim'
