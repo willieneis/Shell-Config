@@ -2,7 +2,13 @@ if [[ $TERM == "screen" ]]
   then
     export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
   fi
-#
+
+# set PS1
+export PS1="$ "
+
+# set python path?
+# PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+
 #Gnome alias for portability
 if [[ $DESKTOP_SESSION == "gnome" ]]
   then
@@ -32,6 +38,12 @@ for script in ~/.bash_scripts/*;
 do
     source $script
 done
-    
+
+# la alias
+alias la='ls -lahFG'
+
 # Open mvim files in new tab
 alias v=mvim
+
+# rm safety net alias for the nub
+alias rm='rm -i'
