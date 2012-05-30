@@ -32,7 +32,10 @@ for script in ~/.bash_scripts/*;
 do
     source $script
 done
-    
+
+# la alias
+alias la='ls -lahFG'
+
 # Open mvim files in new tab
 alias v=mvim
 
