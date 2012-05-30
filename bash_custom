@@ -13,7 +13,7 @@ if [[ $DESKTOP_SESSION == "gnome" ]]
 #OSX specific
 if [[ "`uname`" == "Darwin" ]]
   then
-    alias vim="mvim -v"
+    alias vim=mvim
   fi
 
 if [ -f ~/.bash_github ]; then 

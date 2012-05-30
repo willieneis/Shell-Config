@@ -13,7 +13,6 @@ nmap <leader>y yy,c<space>p
 vmap <leader>y yygv,c<space>p
 
 " Get rid of the topbar on gui mode
-"set guioptions-=T
 set guioptions-=T
 
 syntax enable
@@ -100,10 +99,10 @@ map <F3> :NERDTreeToggle<CR>
 map <F5> :GundoToggle<CR>
 
 "Window Resizing
-map <C-h> <C-w>>
+map <C-h> <C-w><
 map <C-j> <C-W>-
 map <C-k> <C-W>+
-map <C-l> <C-w><
+map <C-l> <C-w>>
 
 "Tab Movement and creation
 :map <C-S-tab> :tabprevious<CR>
