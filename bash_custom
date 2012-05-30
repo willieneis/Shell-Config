@@ -2,7 +2,13 @@ if [[ $TERM == "screen" ]]
   then
     export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
   fi
-#
+
+# set PS1
+export PS1="$ "
+
+# set python path?
+# PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+
 #Gnome alias for portability
 if [[ $DESKTOP_SESSION == "gnome" ]]
   then
