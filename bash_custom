@@ -35,3 +35,6 @@ done
     
 # Open mvim files in new tab
 alias v=mvim
+
+# rm safety net alias for the nub
+alias rm='rm -i'
