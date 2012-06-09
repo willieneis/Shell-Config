@@ -19,7 +19,7 @@ if [[ $DESKTOP_SESSION == "gnome" ]]
 #OSX specific
 if [[ "`uname`" == "Darwin" ]]
   then
-    alias vim="mvim -v"
+    alias vim=mvim
   fi
 
 if [ -f ~/.bash_github ]; then 
@@ -47,3 +47,16 @@ alias v=mvim
 
 # rm safety net alias for the nub
 alias rm='rm -i'
+
+# mid file print function
+
+mid() {
+    if [ $# -eq 2 ]
+        then
+            tail -n +"$2" "$1" | head -n 1
+    fi
+    if [ $# -eq 3 ]
+        then
+            tail -n +"$2" "$1" | head -n "$3"
+    fi
+}
