@@ -24,11 +24,11 @@ highlight Normal ctermbg=none
 
 "Set linenumber stuff
 set numberwidth=3
-"set relativenumber
-set number "changed to default non-relative line number
+set relativenumber
+"set number "changed to default non-relative line number
 autocmd InsertEnter * :set number
-"autocmd InsertLeave * :set relativenumber
-autocmd InsertLeave * :set number "changed to non-relative line number
+autocmd InsertLeave * :set relativenumber
+"autocmd InsertLeave * :set number "changed to non-relative line number
 highlight LineNr ctermbg=darkgrey
 
 "Set reasonable colors for pyflakes highlighting

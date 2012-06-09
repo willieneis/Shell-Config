@@ -7,7 +7,7 @@ if [[ $TERM == "screen" ]]
 export PS1="$ "
 
 # set python path?
-# PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+PATH="/Library/Frameworks/Python.framework/Versions/7.2/bin:${PATH}"
 
 #Gnome alias for portability
 if [[ $DESKTOP_SESSION == "gnome" ]]
@@ -26,7 +26,7 @@ if [ -f ~/.bash_github ]; then
    . ~/.bash_github
   fi
 
-export PATH="/usr/local/bin:$PATH"
+#export PATH="/usr/local/bin:$PATH"
 
 alias fuck='wget -qO - rage.thewaffleshop.net' 
 alias ls='ls -G'
