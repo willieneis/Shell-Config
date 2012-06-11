@@ -1,25 +1,16 @@
+#screen stuff
 if [[ $TERM == "screen" ]]
   then
     export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
   fi
 
-# set PS1
-export PS1="$ "
-
-# set python path?
+# set python path
 PATH="/Library/Frameworks/Python.framework/Versions/7.2/bin:${PATH}"
 
 #Gnome alias for portability
 if [[ $DESKTOP_SESSION == "gnome" ]]
   then
     alias open="gnome-open"
-  fi
-
-
-#OSX specific
-if [[ "`uname`" == "Darwin" ]]
-  then
-    alias vim=mvim
   fi
 
 if [ -f ~/.bash_github ]; then 
@@ -29,7 +20,7 @@ if [ -f ~/.bash_github ]; then
 #export PATH="/usr/local/bin:$PATH"
 
 alias fuck='wget -qO - rage.thewaffleshop.net' 
-alias ls='ls -G'
+alias ls='ls -GF'
 
 # VI mode!
 set -o vi
@@ -49,7 +40,6 @@ alias v=mvim
 alias rm='rm -i'
 
 # mid file print function
-
 mid() {
     if [ $# -eq 2 ]
         then
