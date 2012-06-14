@@ -1,20 +1,8 @@
-if [[ $TERM == "screen" ]]
-  then
-    export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
-  fi
-
-# set PS1
-export PS1="$ "
-
-# set python path?
-# PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
-
 #Gnome alias for portability
 if [[ $DESKTOP_SESSION == "gnome" ]]
   then
     alias open="gnome-open"
   fi
-
 
 #OSX specific
 if [[ "`uname`" == "Darwin" ]]
@@ -49,7 +37,6 @@ alias v=mvim
 alias rm='rm -i'
 
 # mid file print function
-
 mid() {
     if [ $# -eq 2 ]
         then
@@ -60,3 +47,18 @@ mid() {
             tail -n +"$2" "$1" | head -n "$3"
     fi
 }
+
+# screen hack for better tab titles
+case $TERM in
+    screen*)
+        SCREENTITLE='\[\ek\e\\\]\[\ek\W\e\\\]'
+        ;;
+    *)
+        SCREENTITLE=''
+        ;;
+esac
+if [[ $TERM == "screen" ]]
+  then
+    #export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
+    export PS1="${SCREENTITLE}[\u@\h:\w]\$ "
+  fi
