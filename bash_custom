@@ -1,8 +1,11 @@
-#Gnome alias for portability
-if [[ $DESKTOP_SESSION == "gnome" ]]
+#screen stuff
+if [[ $TERM == "screen" ]]
   then
-    alias open="gnome-open"
+    export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
   fi
+
+# set python path
+PATH="/Library/Frameworks/Python.framework/Versions/7.2/bin:${PATH}"
 
 #OSX specific
 if [[ "`uname`" == "Darwin" ]]
@@ -10,14 +13,15 @@ if [[ "`uname`" == "Darwin" ]]
     alias vim=mvim
   fi
 
+# what does this do?
 if [ -f ~/.bash_github ]; then 
    . ~/.bash_github
   fi
 
-export PATH="/usr/local/bin:$PATH"
+#export PATH="/usr/local/bin:$PATH"
 
 alias fuck='wget -qO - rage.thewaffleshop.net' 
-alias ls='ls -G'
+alias ls='ls -GF'
 
 # VI mode!
 set -o vi
