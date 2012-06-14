@@ -66,3 +66,8 @@ if [[ $TERM == "screen" ]]
     #export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
     export PS1="${SCREENTITLE}[\u@\h:\w]\$ "
   fi
+
+# command to ssh into hadoopcron01.b.del.bitly.net
+alias hadoopcron='ssh hadoopcron01.b.del.bitly.net'
+alias science='ssh science.ec2.bitly.net'
+alias scilog='ssh scilog01.ec2.bitly.net'
