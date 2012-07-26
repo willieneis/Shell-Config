@@ -8,15 +8,14 @@ if [[ $TERM == "screen" ]]
 PATH="/Library/Frameworks/Python.framework/Versions/7.2/bin:${PATH}"
 
 #OSX specific
-if [[ "`uname`" == "Darwin" ]]
-  then
+if [[ "`uname`" == "Darwin" ]]; then
     alias vim=mvim
-  fi
+fi
 
 # what does this do?
 if [ -f ~/.bash_github ]; then 
    . ~/.bash_github
-  fi
+fi
 
 #export PATH="/usr/local/bin:$PATH"
 
@@ -68,6 +67,10 @@ if [[ $TERM == "screen" ]]
   fi
 
 # command to ssh into hadoopcron01.b.del.bitly.net
-alias hadoopcron='ssh hadoopcron01.b.del.bitly.net'
-alias science='ssh science.ec2.bitly.net'
-alias scilog='ssh scilog01.ec2.bitly.net'
+alias hadoopcron='ssh willie@hadoopcron01.b.del.bitly.net'
+alias science='ssh willie@science.ec2.bitly.net'
+alias scilog='ssh willie@scilog01.ec2.bitly.net'
+
+
+# command to get (poor man's) tree
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
