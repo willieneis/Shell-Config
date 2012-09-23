@@ -7,6 +7,9 @@ if [[ $TERM == "screen" ]]
 # set python path
 PATH="/Library/Frameworks/Python.framework/Versions/7.2/bin:${PATH}"
 
+# add homebrew directories to path
+export PATH=/usr/local/bin:/usr/local/share/python:$PATH
+
 #OSX specific
 #if [[ "`uname`" == "Darwin" ]]; then
 #    alias vim=mvim
