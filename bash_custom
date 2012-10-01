@@ -74,6 +74,7 @@ alias hadoopcron='ssh willie@hadoopcron01.b.del.bitly.net'
 alias science='ssh willie@science.ec2.bitly.net'
 alias scilog='ssh willie@scilog01.ec2.bitly.net'
 alias mld='ssh wdn@gs12658.sp.cs.cmu.edu'
+alias cogito='ssh wdn@cogito.ml.cmu.edu'
 
 
 # command to get (poor man's) tree
