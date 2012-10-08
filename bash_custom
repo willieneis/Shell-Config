@@ -8,9 +8,9 @@ if [[ $TERM == "screen" ]]
 PATH="/Library/Frameworks/Python.framework/Versions/7.2/bin:${PATH}"
 
 #OSX specific
-if [[ "`uname`" == "Darwin" ]]; then
-    alias vim=mvim
-fi
+#if [[ "`uname`" == "Darwin" ]]; then
+#    alias vim=mvim
+#fi
 
 # what does this do?
 if [ -f ~/.bash_github ]; then 
@@ -18,6 +18,9 @@ if [ -f ~/.bash_github ]; then
 fi
 
 #export PATH="/usr/local/bin:$PATH"
+
+# adding homebrew-installed executables (within directories in /usr/local) to my path
+export PATH=/usr/local/bin:/usr/local/share/python:$PATH
 
 alias fuck='wget -qO - rage.thewaffleshop.net' 
 alias ls='ls -GF'
@@ -66,10 +69,11 @@ if [[ $TERM == "screen" ]]
     export PS1="${SCREENTITLE}[\u@\h:\w]\$ "
   fi
 
-# command to ssh into hadoopcron01.b.del.bitly.net
+# command to ssh into various machines
 alias hadoopcron='ssh willie@hadoopcron01.b.del.bitly.net'
 alias science='ssh willie@science.ec2.bitly.net'
 alias scilog='ssh willie@scilog01.ec2.bitly.net'
+alias cmuweb='ssh wdn@linux.gp.cs.cmu.edu'
 
 
 # command to get (poor man's) tree
