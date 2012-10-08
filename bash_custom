@@ -73,6 +73,7 @@ if [[ $TERM == "screen" ]]
 alias hadoopcron='ssh willie@hadoopcron01.b.del.bitly.net'
 alias science='ssh willie@science.ec2.bitly.net'
 alias scilog='ssh willie@scilog01.ec2.bitly.net'
+alias hpc='ssh wdn2101@hpcsubmit.cc.columbia.edu'
 alias mld='ssh wdn@gs12658.sp.cs.cmu.edu'
 alias cogito='ssh wdn@cogito.ml.cmu.edu'
 
