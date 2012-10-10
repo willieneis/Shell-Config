@@ -39,8 +39,8 @@ done
 # la alias
 alias la='ls -lahFG'
 
-# Open mvim files in new tab
-alias v=mvim
+# Open mvim in terminal
+alias v='mvim -v'
 
 # rm safety net alias for the nub
 alias rm='rm -i'
