@@ -163,4 +163,4 @@ if exists("+showtabline")
 endif
 
 "vim clipboard <=> system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
