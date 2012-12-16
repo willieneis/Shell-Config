@@ -161,3 +161,6 @@ if exists("+showtabline")
      set stal=2 
      set tabline=%!MyTabLine() 
 endif
+
+"vim clipboard <=> system clipboard
+set clipboard=unnamed

@@ -11,9 +11,9 @@ PATH="/Library/Frameworks/Python.framework/Versions/7.2/bin:${PATH}"
 export PATH=/usr/local/bin:/usr/local/share/python:$PATH
 
 #OSX specific
-#if [[ "`uname`" == "Darwin" ]]; then
-#    alias vim=mvim
-#fi
+if [[ "`uname`" == "Darwin" ]]; then
+    alias vim=mvim
+fi
 
 # what does this do?
 if [ -f ~/.bash_github ]; then 
@@ -23,7 +23,7 @@ fi
 #export PATH="/usr/local/bin:$PATH"
 
 # adding homebrew-installed executables (within directories in /usr/local) to my path
-export PATH=/usr/local/bin:/usr/local/share/python:$PATH
+export PATH=/usr/local/bin:/usr/local/share/python:/usr/local/sbin:$PATH
 
 alias fuck='wget -qO - rage.thewaffleshop.net' 
 alias ls='ls -GF'
