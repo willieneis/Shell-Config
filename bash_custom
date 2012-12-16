@@ -12,7 +12,7 @@ export PATH=/usr/local/bin:/usr/local/share/python:$PATH
 
 #OSX specific
 if [[ "`uname`" == "Darwin" ]]; then
-    alias vim=mvim
+    alias vim='mvim -v'
 fi
 
 # what does this do?
